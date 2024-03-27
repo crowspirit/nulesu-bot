@@ -1,0 +1,2 @@
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '17:28:23', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '17:28:23', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ', 'text_': 'Новий користувач (893937933)'}Новий користувач (893937933)

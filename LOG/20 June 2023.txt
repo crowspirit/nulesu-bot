@@ -1,0 +1,32 @@
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '15:11:32', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Відгук', 'chat_id': 893937933, 'date': '15:11:50', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Відгук', 'chat_id': 893937933, 'date': '15:13:41', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '15:40:26', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Завершити❌', 'chat_id': 893937933, 'date': '15:40:29', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '15:42:22', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Могутній Броненосець', 'chat_id': 893937933, 'date': '15:42:23', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Бостонська пивна компанія', 'chat_id': 893937933, 'date': '15:42:25', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Інше питання➡️', 'chat_id': 893937933, 'date': '15:42:25', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Ніган', 'chat_id': 893937933, 'date': '15:42:27', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'VANOS', 'chat_id': 893937933, 'date': '15:42:28', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'VANOS', 'chat_id': 893937933, 'date': '15:42:28', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Завершити❌', 'chat_id': 893937933, 'date': '15:42:31', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/start', 'chat_id': 5015776470, 'date': '15:44:13', 'username': 'None', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Game', 'chat_id': 5015776470, 'date': '15:44:21', 'username': 'None', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Оренду', 'chat_id': 5015776470, 'date': '15:44:22', 'username': 'None', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Skärm', 'chat_id': 5015776470, 'date': '15:44:22', 'username': 'None', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Вибачення', 'chat_id': 5015776470, 'date': '15:44:23', 'username': 'None', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Лоретта Мартін', 'chat_id': 5015776470, 'date': '15:44:24', 'username': 'None', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Ефіопія', 'chat_id': 5015776470, 'date': '15:44:24', 'username': 'None', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Радянський Союз', 'chat_id': 5015776470, 'date': '15:44:25', 'username': 'None', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Завершити❌', 'chat_id': 5015776470, 'date': '15:44:26', 'username': 'None', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': '/start', 'chat_id': -839921000, 'date': '15:55:40', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': -839921000, 'date': '15:56:13', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Монах біля моря', 'chat_id': -839921000, 'date': '15:56:14', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Дональд Трамп', 'chat_id': -839921000, 'date': '15:56:15', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Завершити❌', 'chat_id': -839921000, 'date': '15:56:17', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Розклад', 'chat_id': -839921000, 'date': '15:56:25', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '16:10:04', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '16:11:44', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '16:12:41', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '16:12:43', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}

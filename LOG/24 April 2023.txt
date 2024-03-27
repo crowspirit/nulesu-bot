@@ -1,0 +1,1 @@
+{'text': 'Оаоаоа', 'chat_id': 893937933, 'date': '09:05:40', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}

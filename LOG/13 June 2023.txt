@@ -1,0 +1,33 @@
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '12:31:57', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '12:31:57', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ', 'text_': 'Новий користувач (893937933)'}Новий користувач (893937933)
+{'text': 'Реєстрація', 'chat_id': -973380617, 'date': '13:39:47', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': -973380617, 'date': '13:39:47', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ', 'text_': 'Новий користувач (-973380617)'}Новий користувач (-973380617)
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '21:20:45', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '21:35:23', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '21:37:42', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '21:38:22', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '21:46:50', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '21:48:51', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '21:51:19', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '21:51:32', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '21:52:24', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '21:59:44', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:04:20', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:05:39', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:06:21', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:07:41', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:12:20', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:12:31', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:12:59', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:15:03', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:15:34', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:16:33', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/start', 'chat_id': 706171231, 'date': '22:20:04', 'username': 'Zoryanyi_vuiko', 'first_name': 'Alixi', 'last_name': 'None'}
+{'text': '/Заміни', 'chat_id': 706171231, 'date': '22:21:23', 'username': 'Zoryanyi_vuiko', 'first_name': 'Alixi', 'last_name': 'None'}
+{'text': '/Заміни', 'chat_id': 706171231, 'date': '22:24:52', 'username': 'Zoryanyi_vuiko', 'first_name': 'Alixi', 'last_name': 'None'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:42:13', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:43:04', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:49:46', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '22:51:48', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Розклад', 'chat_id': 893937933, 'date': '23:25:56', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Розклад', 'chat_id': 893937933, 'date': '23:26:35', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}

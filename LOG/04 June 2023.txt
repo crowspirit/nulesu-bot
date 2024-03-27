@@ -1,0 +1,15 @@
+{'text': 'Game', 'chat_id': 893937933, 'date': '12:20:16', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '12:20:16', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Португалія, Ірландія, Італія, Греція, Іспанія', 'chat_id': 893937933, 'date': '12:20:19', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '25', 'chat_id': 893937933, 'date': '12:20:25', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '12:22:08', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Завершити❌', 'chat_id': 893937933, 'date': '12:22:10', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 5015776470, 'date': '12:22:24', 'username': 'dodcool', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Завершити❌', 'chat_id': 5015776470, 'date': '12:22:25', 'username': 'dodcool', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Game', 'chat_id': 5015776470, 'date': '12:22:30', 'username': 'dodcool', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': '4', 'chat_id': 5015776470, 'date': '12:22:31', 'username': 'dodcool', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Завершити❌', 'chat_id': 5015776470, 'date': '12:22:33', 'username': 'dodcool', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Game', 'chat_id': 5015776470, 'date': '12:26:07', 'username': 'dodcool', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': '10', 'chat_id': 5015776470, 'date': '12:26:09', 'username': 'dodcool', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Перший лейтенант', 'chat_id': 5015776470, 'date': '12:26:11', 'username': 'dodcool', 'first_name': '₴_₴', 'last_name': 'None'}
+{'text': 'Завершити❌', 'chat_id': 5015776470, 'date': '12:26:13', 'username': 'dodcool', 'first_name': '₴_₴', 'last_name': 'None'}

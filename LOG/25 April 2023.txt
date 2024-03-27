@@ -1,0 +1,11 @@
+{'text': 'Розклад', 'chat_id': 893937933, 'date': '11:33:20', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Розклад', 'chat_id': 893937933, 'date': '11:33:56', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Заміни', 'chat_id': 893937933, 'date': '11:39:47', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Розклад', 'chat_id': 893937933, 'date': '11:40:03', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Погода', 'chat_id': 893937933, 'date': '11:40:06', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Викладачі', 'chat_id': 893937933, 'date': '11:40:12', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/Заміни', 'chat_id': 893937933, 'date': '11:40:19', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/Розклад', 'chat_id': 893937933, 'date': '11:40:34', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/Погода', 'chat_id': 893937933, 'date': '11:40:40', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/Викладачі', 'chat_id': 893937933, 'date': '11:40:55', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Розклад', 'chat_id': 5015776470, 'date': '12:42:32', 'username': 'dodcool', 'first_name': '₴_₴', 'last_name': 'None'}

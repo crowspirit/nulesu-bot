@@ -1,0 +1,10 @@
+{'text': 'Game', 'chat_id': 893937933, 'date': '12:23:27', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '100', 'chat_id': 893937933, 'date': '12:23:29', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Вірна опозиція Її Величності', 'chat_id': 893937933, 'date': '12:23:30', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Dragon Ball Z: Budokai Tenkaichi 3', 'chat_id': 893937933, 'date': '12:23:31', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Завершити❌', 'chat_id': 893937933, 'date': '12:23:32', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Розклад', 'chat_id': 5073581028, 'date': '19:21:38', 'username': 'comedegarson', 'first_name': 'Dmytro', 'last_name': 'Alt'}
+{'text': 'Розклад', 'chat_id': 5073581028, 'date': '19:22:24', 'username': 'comedegarson', 'first_name': 'Dmytro', 'last_name': 'Alt'}
+{'text': 'Розклад', 'chat_id': 5073581028, 'date': '19:24:21', 'username': 'comedegarson', 'first_name': 'Dmytro', 'last_name': 'Alt'}
+{'text': 'Розклад', 'chat_id': 5073581028, 'date': '19:27:21', 'username': 'comedegarson', 'first_name': 'Dmytro', 'last_name': 'Alt'}
+{'text': 'Розклад', 'chat_id': 5073581028, 'date': '19:27:32', 'username': 'comedegarson', 'first_name': 'Dmytro', 'last_name': 'Alt'}

@@ -1,0 +1,124 @@
+{'text': 'Game', 'chat_id': 893937933, 'date': '11:31:50', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '11:31:50', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'помилковий', 'chat_id': 893937933, 'date': '11:32:04', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '2013 рік', 'chat_id': 893937933, 'date': '11:39:03', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'правда', 'chat_id': 893937933, 'date': '11:39:11', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Союз', 'chat_id': 893937933, 'date': '11:39:27', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Таїланд', 'chat_id': 893937933, 'date': '11:40:46', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Франція', 'chat_id': 893937933, 'date': '11:40:53', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Меупареунія', 'chat_id': 893937933, 'date': '11:41:10', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Юкон', 'chat_id': 893937933, 'date': '11:41:16', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '1930 рік', 'chat_id': 893937933, 'date': '11:41:26', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Мова розмітки', 'chat_id': 893937933, 'date': '11:41:30', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/start', 'chat_id': 701168262, 'date': '11:56:49', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': '/start', 'chat_id': 701168262, 'date': '11:56:49', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None', 'text_': 'Новий користувач (701168262)'}Новий користувач (701168262)
+{'text': 'Game', 'chat_id': 701168262, 'date': '11:57:16', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Громадянська війна в США', 'chat_id': 701168262, 'date': '11:57:35', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Вакама', 'chat_id': 701168262, 'date': '11:58:32', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': '2009 рік', 'chat_id': 701168262, 'date': '11:58:37', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'правда', 'chat_id': 701168262, 'date': '11:58:42', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Арбі', 'chat_id': 701168262, 'date': '11:59:05', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Intel 8088', 'chat_id': 701168262, 'date': '11:59:47', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'помилковий', 'chat_id': 701168262, 'date': '12:00:32', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Техаські рейнджери', 'chat_id': 701168262, 'date': '12:00:57', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Людовик XIV', 'chat_id': 701168262, 'date': '12:01:11', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Хісасі Кіношіта', 'chat_id': 701168262, 'date': '12:01:22', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': '2006 рік', 'chat_id': 701168262, 'date': '12:01:47', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Рожевий пиріг', 'chat_id': 701168262, 'date': '12:02:00', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Платон', 'chat_id': 701168262, 'date': '12:02:39', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Володимир Комаров', 'chat_id': 701168262, 'date': '12:02:50', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Game', 'chat_id': -973380617, 'date': '12:16:47', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '2001 рік', 'chat_id': -973380617, 'date': '12:16:49', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'C++', 'chat_id': -973380617, 'date': '12:16:50', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Завершити❌', 'chat_id': -973380617, 'date': '12:16:58', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '12:17:06', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Джолін Куджо', 'chat_id': 893937933, 'date': '12:17:09', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Вільям Джефферсон Клінтон', 'chat_id': 893937933, 'date': '12:17:10', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Apocalyptica', 'chat_id': 893937933, 'date': '12:17:12', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Дасті, Кірбі та Ральф', 'chat_id': 893937933, 'date': '12:17:13', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Piano Man', 'chat_id': 893937933, 'date': '12:17:14', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '12:17:28', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '12:18:19', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/stats', 'chat_id': 893937933, 'date': '12:18:22', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 701168262, 'date': '12:19:07', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Сніві, Феннекін, Фрокі', 'chat_id': 701168262, 'date': '12:19:13', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Нолан Норт', 'chat_id': 701168262, 'date': '12:20:00', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'помилковий', 'chat_id': 701168262, 'date': '12:20:13', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Хліб', 'chat_id': 701168262, 'date': '12:20:43', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': '1992 рік', 'chat_id': 701168262, 'date': '12:21:01', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Двигун Unreal Engine', 'chat_id': 701168262, 'date': '12:21:09', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Ернест Резерфорд', 'chat_id': 701168262, 'date': '12:21:55', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Лорд Балтімор', 'chat_id': 701168262, 'date': '12:22:06', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': '/stats', 'chat_id': -973380617, 'date': '12:22:15', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/stats', 'chat_id': -973380617, 'date': '12:24:15', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 701168262, 'date': '12:24:27', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Кабанела', 'chat_id': 701168262, 'date': '12:24:39', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Dr.Dre', 'chat_id': 701168262, 'date': '12:24:52', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Чак Норріс', 'chat_id': 701168262, 'date': '12:25:04', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': '4', 'chat_id': 701168262, 'date': '12:27:00', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Сан Франциско', 'chat_id': 701168262, 'date': '12:27:14', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Палац Сент-Джеймс', 'chat_id': 701168262, 'date': '12:27:41', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Тверда Змія', 'chat_id': 701168262, 'date': '12:27:46', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': '/users', 'chat_id': -973380617, 'date': '12:28:13', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Уран', 'chat_id': 701168262, 'date': '12:28:13', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Нікола Тесла', 'chat_id': 701168262, 'date': '12:28:23', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': '/stats', 'chat_id': 701168262, 'date': '12:28:29', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Викладачі', 'chat_id': 701168262, 'date': '12:31:03', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Викладачі', 'chat_id': 701168262, 'date': '12:31:21', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '12:33:09', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Викладачі', 'chat_id': 893937933, 'date': '12:33:43', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Завершити❌', 'chat_id': 893937933, 'date': '12:33:51', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Викладачі', 'chat_id': 701168262, 'date': '17:43:28', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Game', 'chat_id': 701168262, 'date': '17:43:28', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Леді Мадонна', 'chat_id': 701168262, 'date': '17:50:04', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Гнасті Гнорк', 'chat_id': 701168262, 'date': '17:50:09', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': '0', 'chat_id': 701168262, 'date': '17:51:27', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Аркадій', 'chat_id': 701168262, 'date': '17:51:33', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Вільям і Елізабет', 'chat_id': 701168262, 'date': '17:51:49', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Тромбон', 'chat_id': 701168262, 'date': '17:51:55', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'помилковий', 'chat_id': 701168262, 'date': '17:52:02', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Макс Пейн', 'chat_id': 701168262, 'date': '17:52:14', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Нейтральний живопис', 'chat_id': 701168262, 'date': '17:52:23', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Себастьян Феттель', 'chat_id': 701168262, 'date': '17:52:28', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Хайнц', 'chat_id': 701168262, 'date': '17:52:36', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': '524 рік до нашої ери', 'chat_id': 701168262, 'date': '17:52:40', 'username': 'kapalata', 'first_name': 'Сергій', 'last_name': 'None'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '17:53:18', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Ангеліна', 'chat_id': 893937933, 'date': '17:53:40', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Трекер', 'chat_id': 893937933, 'date': '17:53:42', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '17:54:33', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Синій кит', 'chat_id': 893937933, 'date': '17:55:00', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'правда', 'chat_id': 893937933, 'date': '17:58:10', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Зелений', 'chat_id': 893937933, 'date': '17:58:21', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Завершити❌', 'chat_id': 893937933, 'date': '18:08:06', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/stats', 'chat_id': 893937933, 'date': '18:08:08', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '18:26:53', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Marvel Vs. Capcom 2', 'chat_id': 893937933, 'date': '18:26:55', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '1914 - 1915 роки', 'chat_id': 893937933, 'date': '18:26:56', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '1914 - 1918 роки', 'chat_id': 893937933, 'date': '18:26:57', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Темно-коричневий', 'chat_id': 893937933, 'date': '18:26:58', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Темно-коричневий', 'chat_id': 893937933, 'date': '18:26:58', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '"Ой, там".', 'chat_id': 893937933, 'date': '18:27:00', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '18:27:58', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '18:29:47', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '18:31:47', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '18:32:10', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '18:32:28', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/stats', 'chat_id': 893937933, 'date': '18:32:32', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '18:32:34', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '18:34:25', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '18:34:25', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '-42', 'chat_id': 893937933, 'date': '18:34:29', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Майкл', 'chat_id': 893937933, 'date': '18:34:30', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Тревор', 'chat_id': 893937933, 'date': '18:34:30', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': "Полум'яний серпанок", 'chat_id': 893937933, 'date': '18:34:31', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': "Полум'яний серпанок", 'chat_id': 893937933, 'date': '18:34:31', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Вбивчий поверх 2', 'chat_id': 893937933, 'date': '18:34:32', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Вбивчий поверх 2', 'chat_id': 893937933, 'date': '18:34:32', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Неопластицизм', 'chat_id': 893937933, 'date': '18:34:33', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Неопластицизм', 'chat_id': 893937933, 'date': '18:34:33', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '1950 рік', 'chat_id': 893937933, 'date': '18:34:34', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '4 травня 1776 р', 'chat_id': 893937933, 'date': '18:34:35', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/stats', 'chat_id': 893937933, 'date': '18:34:41', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '19:49:53', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Game', 'chat_id': 893937933, 'date': '19:49:53', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Завершити❌', 'chat_id': 893937933, 'date': '19:49:56', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}

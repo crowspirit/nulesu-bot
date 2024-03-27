@@ -1,0 +1,6 @@
+{'text': 'Викладачі', 'chat_id': '893937933', 'date': '11:30:55', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Викладачі', 'chat_id': '893937933', 'date': '16:34:08', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Викладачі', 'chat_id': '893937933', 'date': '16:35:11', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Відгук', 'chat_id': '893937933', 'date': '16:56:26', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Відгук', 'chat_id': '893937933', 'date': '17:00:34', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Відгук', 'chat_id': '893937933', 'date': '17:28:24', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}

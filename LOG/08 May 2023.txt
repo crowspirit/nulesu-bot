@@ -1,0 +1,16 @@
+{'text': 'Погода', 'chat_id': '893937933', 'date': '12:26:24', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Відгук', 'chat_id': '893937933', 'date': '12:26:27', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Викладачі', 'chat_id': '893937933', 'date': '12:26:30', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Відгук', 'chat_id': '893937933', 'date': '12:27:29', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/users', 'chat_id': '893937933', 'date': '18:55:43', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/users', 'chat_id': '893937933', 'date': '18:56:02', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/users', 'chat_id': '893937933', 'date': '18:56:16', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/users', 'chat_id': '893937933', 'date': '21:17:07', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/users', 'chat_id': '893937933', 'date': '21:18:29', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/users', 'chat_id': '893937933', 'date': '21:19:21', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/users', 'chat_id': '893937933', 'date': '21:19:47', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/users', 'chat_id': '893937933', 'date': '21:23:15', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/users', 'chat_id': '893937933', 'date': '21:24:01', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/users', 'chat_id': '893937933', 'date': '21:25:21', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/users', 'chat_id': '893937933', 'date': '21:26:49', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/users', 'chat_id': '893937933', 'date': '21:27:49', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}

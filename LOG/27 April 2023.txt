@@ -1,0 +1,2 @@
+{'text': 'Викладачі', 'chat_id': 893937933, 'date': '18:10:03', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': 'Викладачі', 'chat_id': 893937933, 'date': '18:15:23', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}

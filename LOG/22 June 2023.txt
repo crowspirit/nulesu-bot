@@ -1,0 +1,7 @@
+{'text': 'Реєстрація', 'chat_id': 893937933, 'date': '18:04:45', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/start', 'chat_id': 893937933, 'date': '18:05:51', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/start', 'chat_id': 6006074857, 'date': '18:06:38', 'username': 'None', 'first_name': 'Настенька', 'last_name': 'None'}
+{'text': '/start', 'chat_id': 6006074857, 'date': '18:07:03', 'username': 'None', 'first_name': 'Gdhdhd', 'last_name': 'None'}
+{'text': '/start', 'chat_id': 6006074857, 'date': '18:08:28', 'username': 'None', 'first_name': 'Gdhdhd', 'last_name': 'None'}
+{'text': '/start', 'chat_id': 893937933, 'date': '18:09:08', 'username': 'Crowspirit', 'first_name': 'Bogdan', 'last_name': 'ꑭ'}
+{'text': '/start', 'chat_id': 6006074857, 'date': '18:13:03', 'username': 'None', 'first_name': 'Gdhdhd', 'last_name': 'None'}
