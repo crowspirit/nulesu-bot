@@ -4,7 +4,7 @@ TOKEN='6141936678:AAEzFFrByAXncrw1Z1VdChXaRGHIQYOP4wc'
 Admin='893937933'
 Admin_chat='-720181603'
 response_chat = "-969136900"
-nubip = "https://rcnubip.org.ua/studentu/zmini-do-rozkladu"
+nubip = "https://rfc.nubip.edu.ua/to-a-student/changes-to-the-schedule"
 api_key_pars_foto = '93dff8edeb1c499ca9c5fb9866c0060e'
 api_key_pars_weather = 'c38727daba7c43f6a2e104114231804'
 
