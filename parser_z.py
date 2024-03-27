@@ -333,7 +333,7 @@ def parse_z():
         with open(file_name, 'wb') as f:
             f.write(response.content)
         img = Image.open(file_name)
-        img_cropped = img.crop((700, 250, 1450, img.height-251))
+        img_cropped = img.crop((400, 250, 1450, img.height-350))
         img_cropped.save(file_name)
         print(print_time(),"zaminu")
         return True
