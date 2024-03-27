@@ -3,6 +3,4 @@ sqlite3
 openpyxl
 beautifulsoup4
 Pillow
-googletrans==4.0.0-rc1
-openai
 pytz

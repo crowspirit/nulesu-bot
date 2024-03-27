@@ -6,7 +6,7 @@ import os
 from parser_z import *
 import traceback
 import sqlite3
-from GPT_request import request
+# from GPT_request import request
 from time import sleep
 import io
 
@@ -849,28 +849,28 @@ try:
             bot.send_message(message.chat.id,"Відгук скасовано",reply_markup=markup)
 
     # -----------------------------GPT--------------------------------------------------
-    @bot.message_handler(func=lambda message: message.text =='GPT' )
-    def Users(message):
-        log(message)
-        markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(types.KeyboardButton("Відмінити"))
-        bot.send_message(message.chat.id, "Надішліть свій запит:",reply_markup=markup)
-        bot.register_next_step_handler(message, process)
-    def process(message):
-        log(message)
-        if str(message.chat.id) == config.Admin:
-            markup = markup_menu_admin
-        else:
-            markup = markup_menu
+    # @bot.message_handler(func=lambda message: message.text =='GPT' )
+    # def Users(message):
+    #     log(message)
+    #     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    #     markup.add(types.KeyboardButton("Відмінити"))
+    #     bot.send_message(message.chat.id, "Надішліть свій запит:",reply_markup=markup)
+    #     bot.register_next_step_handler(message, process)
+    # def process(message):
+    #     log(message)
+    #     if str(message.chat.id) == config.Admin:
+    #         markup = markup_menu_admin
+    #     else:
+    #         markup = markup_menu
 
 
-        if message.text != "Відмінити":
-            mess = bot.send_message(message.chat.id, "<i>Запит обробляється</i>",parse_mode="HTML")
-            bot.send_message(message.chat.id, request(message.text))
-            bot.delete_message(message.chat.id,mess.id)
-            bot.register_next_step_handler(message, process)
-        else:
-            bot.send_message(message.chat.id,"Запит скасовано",reply_markup=markup)
+    #     if message.text != "Відмінити":
+    #         mess = bot.send_message(message.chat.id, "<i>Запит обробляється</i>",parse_mode="HTML")
+    #         bot.send_message(message.chat.id, request(message.text))
+    #         bot.delete_message(message.chat.id,mess.id)
+    #         bot.register_next_step_handler(message, process)
+    #     else:
+    #         bot.send_message(message.chat.id,"Запит скасовано",reply_markup=markup)
     @bot.message_handler(func=lambda message: message.text =='Відмінити' or message.text == "Завершити❌")
     def User(message):
         if str(message.chat.id) == config.Admin:

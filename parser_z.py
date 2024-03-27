@@ -7,7 +7,7 @@ import os
 from config import *
 from PIL import Image
 import json
-from googletrans import Translator
+# from googletrans import Translator
 import sqlite3
 import random
 import telebot
@@ -264,38 +264,38 @@ def insert_into_table(arg1, arg2, arg3):
     conn.commit()
     conn.close()
 
-def translate(text):
-    if text is None:
-        return None
-    try:
-        translator = Translator()
-        translation = translator.translate(text, src="en" ,dest='uk')
-        # print(translation.text)
-        return translation.text
-    except Exception as e:
-        print(e)
-        return translate(text)
+# def translate(text):
+#     if text is None:
+#         return None
+#     try:
+#         translator = Translator()
+#         translation = translator.translate(text, src="en" ,dest='uk')
+#         # print(translation.text)
+#         return translation.text
+#     except Exception as e:
+#         print(e)
+#         return translate(text)
 
-def get_random_question():
-    response = requests.get("https://opentdb.com/api.php?amount=50")
-    if response.status_code == 200:
-        question_data = response.json()
-        results = question_data["results"]
-        print(len(results))
-        for n in range(len(results)):
-            if results:
-                question = results[n]["question"]
-                answers = results[n]["incorrect_answers"]
-                ans=[]
-                for i in answers:
-                    ans.append(translate(i))
-                answers = ans
-                correct_answer = translate(results[n]["correct_answer"])
-                answers.append(correct_answer)
-                answers.sort()  # перемішуємо відповіді
+# def get_random_question():
+#     response = requests.get("https://opentdb.com/api.php?amount=50")
+#     if response.status_code == 200:
+#         question_data = response.json()
+#         results = question_data["results"]
+#         print(len(results))
+#         for n in range(len(results)):
+#             if results:
+#                 question = results[n]["question"]
+#                 answers = results[n]["incorrect_answers"]
+#                 ans=[]
+#                 for i in answers:
+#                     ans.append(translate(i))
+#                 answers = ans
+#                 correct_answer = translate(results[n]["correct_answer"])
+#                 answers.append(correct_answer)
+#                 answers.sort()  # перемішуємо відповіді
                 
-                insert_into_table(translate(question), "~".join(answers), correct_answer)
-    return None, None, None
+#                 insert_into_table(translate(question), "~".join(answers), correct_answer)
+#     return None, None, None
 
 
 
