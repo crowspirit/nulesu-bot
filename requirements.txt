@@ -1,10 +1,8 @@
 telebot
 sqlite3
 openpyxl
-bs4
-PIL
-googletrans
+beautifulsoup4
+Pillow
+googletrans==4.0.0-rc1
 openai
 pytz
-io
-traceback
