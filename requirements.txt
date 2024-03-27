@@ -1,0 +1,10 @@
+telebot
+sqlite3
+openpyxl
+bs4
+PIL
+googletrans
+openai
+pytz
+io
+traceback
