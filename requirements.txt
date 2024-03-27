@@ -1,5 +1,4 @@
 telebot
-sqlite3
 openpyxl
 beautifulsoup4
 Pillow
