@@ -1,6 +1,6 @@
 from data import print_data,print_time
 
-TOKEN='5239080208:AAHfd9HNn3sHpzT3C3FnmgYbUUS_W7yt2BM'
+TOKEN='6141936678:AAEzFFrByAXncrw1Z1VdChXaRGHIQYOP4wc'
 Admin='893937933'
 Admin_chat='-720181603'
 response_chat = "-969136900"
