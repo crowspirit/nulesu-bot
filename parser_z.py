@@ -374,6 +374,7 @@ def parse_z():
     except Exception as e:
         bot = telebot.TeleBot(config.TOKEN)
         bot.send_message(config.Admin, 'парс замін пройшов не успішно(((((((((((((')
+        print(e)
         return False
 def ch_z():
     with open("chuselnuk_znamenuk.txt","r", encoding='utf-8') as file:
