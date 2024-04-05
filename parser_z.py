@@ -349,7 +349,7 @@ def parse_z():
         }
         # Виконуємо запит GET до URL
         response = requests.get(url,headers=header)
-
+        print(response)
         # Створюємо об'єкт BeautifulSoup з HTML відповіді
         soup = BeautifulSoup(response.text, 'html.parser')
 
