@@ -345,8 +345,23 @@ def parse_z():
         file_name = 'zaminu/'+print_data()+'.png'
         url = "https://rfc.nubip.edu.ua/to-a-student/changes-to-the-schedule/"
         header = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0",
+            'authority': 'rfc.nubip.edu.ua',
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'accept-language': 'uk-UA,uk;q=0.9,en-US;q=0.8,en;q=0.7' ,
+            'cache-control': 'max-age=0' ,
+            'cookie': 'facebookCounter=0; _ga=GA1.3.1076946734.1712255585; SESS338605fa3b1688b13f7cbb90827ede5c=k213cqf7cof1trcgfp7d1vt051; _ga_EVYXMWXM7V=GS1.3.1712255585.1.1.1712255794.0.0.0; _lscache_vary=1fd20953942bdbf516b8351fe15571d4',
+            'referer': 'https://rfc.nubip.edu.ua/to-a-student/changes-to-the-schedule/' ,
+            'sec-ch-ua-mobile': '?0' ,
+            'sec-ch-ua-platform': "Windows" ,
+            'sec-fetch-dest': 'document' ,
+            'sec-fetch-mode': 'navigate' ,
+            'sec-fetch-site': 'same-origin' ,
+            'upgrade-insecure-requests': '1' 
+            
         }
+        
+        
         # Виконуємо запит GET до URL
         response = requests.get(url,headers=header)
         print(response)
@@ -715,5 +730,5 @@ if __name__ == "__main__":
     # while True:
     #     print(find_elements_by_digit(str(input("> ")),2,True))
     # pass
-    # parse_bd_user()
+    parse_bd_user()
     pass
