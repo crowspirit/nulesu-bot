@@ -370,12 +370,9 @@ def parse_z():
 
         # Знаходимо елементи за класом
         elements = soup.find_all(class_="stk-img-wrapper stk-image--shape-stretch stk--shadow-none")
-        url = str() 
-        # Виводимо URL зображень
-        for element in elements:
-            img = element.find('img')
-            if img and 'data-src' in img.attrs:
-                url = img['data-src']
+        # print(elements)
+        url = soup.find("img", class_="stk-img")["src"]
+        print(url)
         response = requests.get(url,headers=header)
         print(response)
         # Перевіряємо, чи запит був успішним
@@ -730,5 +727,5 @@ if __name__ == "__main__":
     # while True:
     #     print(find_elements_by_digit(str(input("> ")),2,True))
     # pass
-    parse_bd_user()
+    parse_z()
     pass
