@@ -362,7 +362,7 @@ def parse_z():
             if img and 'data-src' in img.attrs:
                 url = img['data-src']
         response = requests.get(url,headers=header)
-
+        print(response)
         # Перевіряємо, чи запит був успішним
         if response.status_code == 200:
             # Зберігаємо зображення
