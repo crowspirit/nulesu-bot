@@ -11,6 +11,7 @@ import json
 import sqlite3
 import random
 import telebot
+import config
 
 second_zmina = ["21-Б","22-Б","31-Б","41-Б","42-Б","21-Д","22-Д","31-Д","41-Д","42-Д"]
 second_zmina1 = ["21-О","22-О","31-О","21-П","31-П","21-Ф","31-Ф","21-М","31-М"]
@@ -315,32 +316,65 @@ def parse_weather(day):
     return(f"Погода в місті {city} на {date}:\nМаксимальна температура: {max_temp} °C \nМінімальна температура: {min_temp} °C \nСередня температура: {avg_temp} °C \nУмови: {condition}" )
 
 def parse_z():
+    # try:
+    #     file_name = 'zaminu/'+print_data()+'.png'
+    #     api_key = api_key_pars_foto
+    #     if int(print_data()[:2])%2 == 1:
+    #         url = nubip+"/"
+    #     else:
+    #         url = nubip
+    #     script = """
+    #         function scrollToBottom() {
+    #             window.scrollTo(0, document.body.scrollHeight);
+    #         }
+    #         scrollToBottom();
+    #     """
+    #     url = f'https://api.apiflash.com/v1/urltoimage?access_key={api_key}&url={url}&format=png&scroll=true&full_page=true'
+    #     response = requests.get(url, params={'js': script})
+    #     with open(file_name, 'wb') as f:
+    #         f.write(response.content)
+    #     img = Image.open(file_name)
+    #     # img_cropped = img.crop((400, 250, 1450, img.height-350))
+    #     # img_cropped.save(file_name)
+    #     print(print_time(),"zaminu")
+    #     return True
+    # except Exception as e:
+    #     print(e)
+    #     return False
     try:
         file_name = 'zaminu/'+print_data()+'.png'
-        api_key = api_key_pars_foto
-        if int(print_data()[:2])%2 == 1:
-            url = nubip+"/"
+        url = "https://rfc.nubip.edu.ua/to-a-student/changes-to-the-schedule/"
+        header = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0"
+        }
+        # Виконуємо запит GET до URL
+        response = requests.get(url,headers=header)
+
+        # Створюємо об'єкт BeautifulSoup з HTML відповіді
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Знаходимо елементи за класом
+        elements = soup.find_all(class_="stk-img-wrapper stk-image--shape-stretch stk--shadow-none")
+        url = str() 
+        # Виводимо URL зображень
+        for element in elements:
+            img = element.find('img')
+            if img and 'data-src' in img.attrs:
+                url = img['data-src']
+        response = requests.get(url,headers=header)
+
+        # Перевіряємо, чи запит був успішним
+        if response.status_code == 200:
+            # Зберігаємо зображення
+            with open(file_name, 'wb') as f:
+                f.write(response.content)
         else:
-            url = nubip
-        script = """
-            function scrollToBottom() {
-                window.scrollTo(0, document.body.scrollHeight);
-            }
-            scrollToBottom();
-        """
-        url = f'https://api.apiflash.com/v1/urltoimage?access_key={api_key}&url={url}&format=png&scroll=true&full_page=true'
-        response = requests.get(url, params={'js': script})
-        with open(file_name, 'wb') as f:
-            f.write(response.content)
-        img = Image.open(file_name)
-        img_cropped = img.crop((400, 250, 1450, img.height-350))
-        img_cropped.save(file_name)
-        print(print_time(),"zaminu")
+            print(f"Не вдалося завантажити зображення. Код статусу: {response.status_code}")
         return True
     except Exception as e:
-        print(e)
+        bot = telebot.TeleBot(config.TOKEN)
+        bot.send_message(config.Admin, 'парс замін пройшов не успішно(((((((((((((')
         return False
-    
 def ch_z():
     with open("chuselnuk_znamenuk.txt","r", encoding='utf-8') as file:
         if 'чисельник' == file.readline():
@@ -680,4 +714,5 @@ if __name__ == "__main__":
     # while True:
     #     print(find_elements_by_digit(str(input("> ")),2,True))
     # pass
-    parse_bd_user()
+    # parse_bd_user()
+    pass
