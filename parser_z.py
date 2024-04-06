@@ -360,10 +360,12 @@ def parse_z():
         'upgrade-insecure-requests': '1',
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0'
         }
-        
+        proxies = {
+            "http": "http://95.164.89.123:8888"
+        }
         
         # Виконуємо запит GET до URL
-        response = requests.get(url,headers=header)
+        response = requests.get(url,headers=header,proxies=proxies)
         print("12121",response)
         # Створюємо об'єкт BeautifulSoup з HTML відповіді
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -373,7 +375,7 @@ def parse_z():
         # print(elements)
         url = soup.find("img", class_="stk-img")["src"]
         print(url)
-        response = requests.get(url,headers=header)
+        response = requests.get(url,headers=header,proxies=proxies)
         print(response)
         # Перевіряємо, чи запит був успішним
         if response.status_code == 200:
