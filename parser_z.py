@@ -361,7 +361,8 @@ def parse_z():
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0'
         }
         proxies = {
-            "http": "http://95.164.89.123:8888"
+            "http": "http://95.164.89.123:8888",
+            "https": "https://195.138.94.169:41890"
         }
         
         # Виконуємо запит GET до URL
