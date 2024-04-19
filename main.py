@@ -878,6 +878,6 @@ try:
         else:
             markup = markup_menu
         bot.send_message(chat_id=message.chat.id,text="скасовано",reply_markup=markup)
-    bot.polling(none_stop=True,timeout=999999)
+    bot.polling(none_stop=True)
 except Exception as e:
     traceback.print_exc()
