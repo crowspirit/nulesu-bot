@@ -424,17 +424,18 @@ try:
     def info(message):
         log(message)
         try:
-            user = message.chat.id
-            if os.path.exists('zaminu/'+print_data()+'.png'):
-                with open('zaminu/'+print_data()+'.png',"rb")as photo:
-                    bot.send_photo(user,photo=photo)
-            elif os.path.exists('zaminu/'+yesterday_date()+'.png'):
-                with open('zaminu/'+yesterday_date()+'.png',"rb")as photo:
-                    bot.send_photo(user,photo=photo)
-            else:
-                parse_z()
-                with open('zaminu/'+print_data()+'.png',"rb")as photo:
-                    bot.send_photo(user,photo=photo)
+            bot.send_message(chat_id=message.chat.id, text="Тимчасово не працюють")
+            # user = message.chat.id
+            # if os.path.exists('zaminu/'+print_data()+'.png'):
+            #     with open('zaminu/'+print_data()+'.png',"rb")as photo:
+            #         bot.send_photo(user,photo=photo)
+            # elif os.path.exists('zaminu/'+yesterday_date()+'.png'):
+            #     with open('zaminu/'+yesterday_date()+'.png',"rb")as photo:
+            #         bot.send_photo(user,photo=photo)
+            # else:
+            #     parse_z()
+            #     with open('zaminu/'+print_data()+'.png',"rb")as photo:
+            #         bot.send_photo(user,photo=photo)
         except Exception as e:
             print(f"370 : {e}")
     # ---------------------------------------розклад------------------------------------------------
