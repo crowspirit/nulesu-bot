@@ -437,7 +437,7 @@ try:
                 with open('zaminu/'+print_data()+'.png',"rb")as photo:
                     bot.send_photo(user,photo=photo)
         except Exception as e:
-            print(f"370 : {e}")
+            print(f"440 : {e}")
     # ---------------------------------------розклад------------------------------------------------
     @bot.message_handler(func=lambda message: message.text =="Розклад" or message.text =="/Розклад")
     def info(message):
@@ -763,7 +763,8 @@ try:
                     #     print(f"{user} - помилка \n{e}")
                         # bot.send_message(Admin,f"{user} ban")
                     lens -= 1
-                bot.edit_message_text("Good",Admin,mess.message_id)
+                    bot.edit_message_text(f"{lens}",Admin,mess.message_id)
+                bot.edit_message_text("good",Admin,mess.message_id)
     # -------------------------------Game------------------------------------------
     # @bot.message_handler(commands=['update'])
 
