@@ -767,7 +767,6 @@ try:
                     #     print(f"{user} - помилка \n{e}")
                         # bot.send_message(Admin,f"{user} ban")
                     lens -= 1
-                    bot.edit_message_text(f"{lens}",Admin,mess.message_id)
                 bot.edit_message_text("good",Admin,mess.message_id)
     # -------------------------------Game------------------------------------------
     # @bot.message_handler(commands=['update'])
