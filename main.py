@@ -733,7 +733,11 @@ try:
                     bot.edit_message_text(text = str(lens),chat_id = Admin,message_id= mess.message_id)
                     with open('zaminu/'+print_data()+'.png',"rb")as photo:
                         print(user," ")
-                        bot.send_photo(user,photo=photo)
+                        try:
+                            bot.send_photo(user,photo=photo)
+                        except:
+                            print(user,"помилка")
+  
                     # try:
                     #     if print_today() == 6:
                     #         with open("sticker_ok.webp","rb") as sticker_file:
