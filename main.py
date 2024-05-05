@@ -130,7 +130,7 @@ group_by_department = {
 }
 
 
-bot = telebot.TeleBot(config.TOKEN, timeout=10000)
+bot = telebot.TeleBot(config.TOKEN, apihelper_timeout=10000)
 bot.send_message(config.Admin, 'БОТ ЗАПУЩЕН')
 
 
