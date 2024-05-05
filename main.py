@@ -130,7 +130,7 @@ group_by_department = {
 }
 
 
-bot = telebot.TeleBot(config.TOKEN,apihelper_event_logging = true)
+bot = telebot.TeleBot(config.TOKEN,skip_pending = true)
 bot.send_message(config.Admin, 'БОТ ЗАПУЩЕН')
 
 
