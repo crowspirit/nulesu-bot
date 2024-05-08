@@ -915,7 +915,7 @@ try:
                 button_bad = types.InlineKeyboardButton(text='❌', callback_data=f"news_dislike")
                 keyboard.add(button_good,button_bad)
                 if downloaded_file != None:
-                    bot.send_photo(user,downloaded_file,caption=f"{name_news.upper()}\n__________________________________\n{text}\n__________________________________\nПрислав: {name}\n#{' #'.join(message.text.split())} #{id}",reply_markup = keyboard)
+                    bot.send_photo(user,downloaded_file,caption=f"{name_news.upper()}\n__________________________________\n{text}\n__________________________________\nПрислав: {name}\n#{' #'.join(message.text.split())} #{id}", reply_markup=markup_menu)
                 else:
                     bot.send_message(user,f"{name_news.upper()}\n__________________________________\n{text}\n__________________________________\nПрислав: {name}\n#{' #'.join(message.text.split())} #{id}",reply_markup = keyboard)
 
