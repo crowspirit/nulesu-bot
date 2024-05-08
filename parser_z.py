@@ -12,6 +12,8 @@ import sqlite3
 import random
 import telebot
 import config
+import datetime
+
 
 second_zmina = ["21-Б","22-Б","31-Б","41-Б","42-Б","21-Д","22-Д","31-Д","41-Д","42-Д"]
 second_zmina1 = ["21-О","22-О","31-О","21-П","31-П","21-Ф","31-Ф","21-М","31-М"]
@@ -787,7 +789,8 @@ def add_like(id):
     conn.commit()
     conn.close()
 def date_key(item):
-    return datetime.strptime(item[1], '%b %Y')
+    return datetime.datetime.strptime(item[1], '%b %Y')
+
 def get_all_dates():
     # Підключення до бази даних
     conn = sqlite3.connect('news.db')

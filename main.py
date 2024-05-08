@@ -398,6 +398,8 @@ try:
                     bot.send_document(message.chat.id,file)
                 with open("user_db.db","rb") as file:
                     bot.send_document(message.chat.id,file)
+                with open("news.db","rb") as file:
+                    bot.send_document(message.chat.id,file)
 
                 folder_path = "LOG/"
                 files = os.listdir(folder_path)
@@ -1141,7 +1143,7 @@ try:
         if new[5]:
             bot.send_photo(call.message.chat.id,new[5],caption=f"{new[2].upper()}\n__________________________________\n{new[4]}\n__________________________________\nПрислав: {new[3]}\n#{' #'.join((new[6]).split())}\n#{new[0]}",reply_markup = keyboard)
         else:
-            bot.send_message(call.message.chat.id,f"{new[2].upper()}\n__________________________________\n{new[4]}\n__________________________________\nПрислав: {new[3]}\n#{' #'.join(new[6])}\n#{(new[0]).split()}",reply_markup = keyboard)
+            bot.send_message(call.message.chat.id,f"{new[2].upper()}\n__________________________________\n{new[4]}\n__________________________________\nПрислав: {new[3]}\n#{' #'.join((new[6]).split())}\n#{(new[0])}",reply_markup = keyboard)
 
     # -----------------------------GPT--------------------------------------------------
     # @bot.message_handler(func=lambda message: message.text =='GPT' )
@@ -1175,4 +1177,11 @@ try:
         bot.send_message(chat_id=message.chat.id,text="скасовано",reply_markup=markup)
     bot.polling(none_stop=True)
 except Exception as e:
+    bot.send_message(Admin,f"краш{e}")
+    with open("database.db","rb") as file:
+        bot.send_document(Admin,file)
+    with open("user_db.db","rb") as file:
+        bot.send_document(Admin,file)
+    with open("news.db","rb") as file:
+        bot.send_document(Admin,file)
     traceback.print_exc()
