@@ -321,7 +321,7 @@ try:
             keyboards.add(buttons1)
             bot.send_message(chat_id=Admin,text="Виберіть",reply_markup=keyboards)
 
-    @bot.callback_query_handler(func=lambda call:   call.data.split("_")[0] in ["news"])
+    @bot.callback_query_handler(func=lambda call:   call.data == "news_all")
     def handle_teachers_callback(call):
         if call.data.split("_")[1] == "all":
             mess = bot.send_message(call.message.chat.id, "Надішліть повідомлення:")
