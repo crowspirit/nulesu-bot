@@ -717,6 +717,133 @@ def find_elements_by_digit(digit, column, ch_zn):
                         elements.append(f"{i+1}) - {sheet_name} {element}")
     return sorted(elements, key=lambda x: int(x.split(")")[0]))
 
+
+def check_and_create_database():
+    try:
+        # Перевірка наявності бази даних
+        if not os.path.exists('news.db'):
+            # Підключення до бази даних
+            conn = sqlite3.connect('news.db')
+            cursor = conn.cursor()
+
+            # Створення таблиці
+            cursor.execute('''CREATE TABLE news (
+                              id INTEGER PRIMARY KEY AUTOINCREMENT,
+                              date TEXT,
+                              name TEXT,
+                              author TEXT,
+                              text TEXT,
+                              photo BLOB,
+                              tags TEXT,
+                              views INTEGER,
+                              likes INTEGER)''')
+
+            # Збереження змін у базі даних
+            conn.commit()
+            conn.close()
+        else:
+            pass
+
+    except sqlite3.Error as e:
+        print("Сталася помилка при роботі з базою даних:", e)
+
+        
+def add_news(name,author,text,photo,tags):
+    check_and_create_database()
+    date = print_data_time()
+    
+    # Підключення до бази даних
+    conn = sqlite3.connect('news.db')
+    cursor = conn.cursor()
+
+    # Вставка нового запису у таблицю
+    cursor.execute('''INSERT INTO news (date, name, author, text, photo, tags, views, likes)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?)''', (date, name, author, text, photo, tags, 0, 0))
+    inserted_id = cursor.lastrowid
+    # Збереження змін у базі даних
+    conn.commit()
+    conn.close()
+    return(inserted_id)
+    # except sqlite3.Error as e:
+    #     print("Сталася помилка при додаванні елемента до бази даних:", e)
+
+    # finally:
+    #     # Закриття з'єднання з базою даних
+    #     if conn:
+    #         conn.close()
+def add_like(id):
+    conn = sqlite3.connect('news.db')
+    cursor = conn.cursor()
+
+    # Отримання поточної кількості лайків за вказаний id
+    cursor.execute('''SELECT likes FROM news WHERE id = ?''', (id,))
+    current_likes = cursor.fetchone()[0]
+
+    # Оновлення кількості лайків (додавання 1 до поточної кількості)
+    updated_likes = current_likes + 1
+    cursor.execute('''UPDATE news SET likes = ? WHERE id = ?''', (updated_likes, id))
+
+    # Збереження змін у базі даних
+    conn.commit()
+    conn.close()
+def date_key(item):
+    return datetime.strptime(item[1], '%b %Y')
+def get_all_dates():
+    # Підключення до бази даних
+    conn = sqlite3.connect('news.db')
+    cursor = conn.cursor()
+
+    # Виконання запиту до бази даних для отримання унікальних значень стовпця date
+    cursor.execute('''SELECT DISTINCT date FROM news''')
+    rows = cursor.fetchall()  # Отримання всіх рядків результату запиту
+
+    # Отримання унікальних значень стовпця date з кожного рядка
+    unique_dates = [row[0] for row in rows]
+
+    # Закриття з'єднання з базою даних
+    conn.close()
+    
+    for i in range(len(unique_dates)):
+        unique_dates[i] = unique_dates[i][:11]
+    # print(unique_dates)
+    lis = []
+    for i in range(len(unique_dates)):
+        if unique_dates[i] not in lis:
+            lis.append(unique_dates[i])
+    unique_dates = lis
+    # print(unique_dates)
+    for i in range(len(unique_dates)):
+        unique_dates[i] = unique_dates[i].split()
+        unique_dates[i] = [int(unique_dates[i][0]),unique_dates[i][1]+" "+unique_dates[i][2]]
+    return sorted(unique_dates, key=date_key)
+def get_news_of_date(date):
+    conn = sqlite3.connect('news.db')
+    cursor = conn.cursor()
+
+    # Виконання запиту до бази даних для отримання унікальних значень стовпця date
+    cursor.execute('''SELECT DISTINCT date,id,name FROM news''')
+    rows = cursor.fetchall()  # Отримання всіх рядків результату запиту
+    # Отримання унікальних значень стовпця date з кожного рядка
+    
+    conn.close()
+    for i in range(len(rows)):
+        rows[i] = list(rows[i])
+        rows[i][0] = rows[i][0][:-9]
+    print(rows)
+    lis = []
+    for i in range(len(rows)):
+        print(rows[i][0],date)
+        if rows[i][0] == date:
+            lis.append([rows[i][1],rows[i][2]])
+    print(lis)
+    return lis
+def get_new(id):
+    connection = sqlite3.connect('news.db')
+    cursor = connection.cursor()
+
+    cursor.execute('SELECT * FROM news WHERE id = ?', (id,))
+    result = cursor.fetchone()
+    return result
 if __name__ == "__main__":
     # for i in range(360):
     #     get_random_question()

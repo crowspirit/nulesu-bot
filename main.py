@@ -86,7 +86,8 @@ button_register = types.KeyboardButton(text="Реєстрація")
 button_file = types.KeyboardButton(text="/file")
 button_weather = types.KeyboardButton(text="Погода")
 button_response = types.KeyboardButton(text="Відгук")
-button_news = types.KeyboardButton(text="/новини")
+button_mailing = types.KeyboardButton(text="/новини")
+button_news = types.KeyboardButton(text="Новини")
 button_number_of_users = types.KeyboardButton(text="/користувачі")
 button_game = types.KeyboardButton(text="Game")
 button_info = types.KeyboardButton(text="Про коледж")
@@ -97,15 +98,15 @@ button_all_info_users = types.KeyboardButton(text="/all_users")
 
 markup_menu_admin.add(buttons,buttons1,button_game)
 markup_menu_admin.add(button_weather,button_response,buttons3)
-markup_menu_admin.add(button_register)
+markup_menu_admin.add(button_register,button_news)
 markup_menu_admin.add(button_file,button_number_of_users, button_all_info_users)
-markup_menu_admin.add(button_news, button_rozsulka)
+markup_menu_admin.add(button_mailing, button_rozsulka)
 
 
 
 markup_menu.add(buttons,buttons1,button_game)
 markup_menu.add(button_weather,button_response,buttons3)
-markup_menu.add(button_register)
+markup_menu.add(button_register,button_news)
 
 markup_menu_abiturient.add(button_info,buttons3)
 markup_menu_abiturient.add(button_weather,button_response)
@@ -571,11 +572,11 @@ try:
             text += "Щоб оцінити викладача, виберіть оцінку нижче."
             teacher = call.data.split()[0]+" "+call.data.split()[1][0]
             markup = types.InlineKeyboardMarkup(row_width=5)
-            item1 = types.InlineKeyboardButton("1", callback_data=teacher+'_1')
-            item2 = types.InlineKeyboardButton("2", callback_data=teacher+'_2')
-            item3 = types.InlineKeyboardButton("3", callback_data=teacher+'_3')
-            item4 = types.InlineKeyboardButton("4", callback_data=teacher+'_4')
-            item5 = types.InlineKeyboardButton("5", callback_data=teacher+'_5')
+            item1 = types.InlineKeyboardButton("1", callback_data=teacher+'_1_oc')
+            item2 = types.InlineKeyboardButton("2", callback_data=teacher+'_2_oc')
+            item3 = types.InlineKeyboardButton("3", callback_data=teacher+'_3_oc')
+            item4 = types.InlineKeyboardButton("4", callback_data=teacher+'_4_oc')
+            item5 = types.InlineKeyboardButton("5", callback_data=teacher+'_5_oc')
             markup.add(item1, item2, item3, item4, item5)
             bot.delete_message(call.message.chat.id, call.message.id)
             if os.path.exists(f"teacher_rang/{teacher}.txt"):
@@ -590,7 +591,7 @@ try:
         except Exception as e:
             print(f"error_440 {e}")
 
-    @bot.callback_query_handler(func=lambda call: call.data.split("_")[1] in ["1","2","3","4","5"])
+    @bot.callback_query_handler(func=lambda call: "oc" in call.data)
     def handle_teachers_callback(call):
         print(f"{call.message.chat.id}  {call.data}")
         teacher = call.data.split("_")[0]
@@ -705,7 +706,7 @@ try:
         markup.add(item1, item2, item3)
         bot.send_message(chat_id=message.chat.id, text="Оберіть день", reply_markup=markup)
 
-    @bot.callback_query_handler(func=lambda call:   call.data.split("_")[1] in ["weather"])
+    @bot.callback_query_handler(func=lambda call:  "weather" in call.data)
     def handle_teachers_callback(call):
         bot.send_message(chat_id=call.message.chat.id, text=parse_weather(int(call.data.split("_")[0])).split("~")[0] )
 
@@ -852,6 +853,294 @@ try:
             bot.send_message(message.chat.id, "Дякуємо за ваш відгук!",reply_markup=markup)
         else:
             bot.send_message(message.chat.id,"Відгук скасовано",reply_markup=markup)
+
+# -----------------------------------Новини-----------------------------------------
+    @bot.message_handler(func=lambda message: message.text =='Новини' )
+    def Users(message):   
+        keyboard_news = types.InlineKeyboardMarkup()
+        button_revision = types.InlineKeyboardButton(text='Переглянути новини', callback_data=f"news_revision")
+        keyboard_news.add(button_revision)
+        button_offer = types.InlineKeyboardButton(text="Запропонувати новину", callback_data=f"news_offer")
+        keyboard_news.add(button_offer)
+        bot.send_message(message.chat.id,"📰",reply_markup = keyboard_news)
+
+    @bot.callback_query_handler(func=lambda call: call.data == "news_offer")
+    def handle_teachers_callback(call):
+        bot.edit_message_reply_markup(call.message.chat.id, call.message.id, reply_markup=None)
+        bot.edit_message_text("Надішліть текст новини😼", call.message.chat.id, call.message.id)
+        bot.register_next_step_handler(call.message, news_entry)
+    def news_entry(message):
+        ne_nadsulatu_keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
+        ne_nadsulau = types.KeyboardButton(text="Не надсилати")
+        ne_nadsulatu_keyboard.add(ne_nadsulau)
+        bot.send_message(message.chat.id,"Надішліть фото",reply_markup=ne_nadsulatu_keyboard)
+        bot.register_next_step_handler(message, news_entry_1,message.text)
+    def news_entry_1(message, text):
+        if message.content_type == 'photo':
+            photos = message.photo
+            if str(message.chat.id) == Admin:
+                bot.send_message(message.chat.id,"Надішліть назву новини",reply_markup=markup_menu_admin)
+            else:
+                bot.send_message(message.chat.id,"Надішліть назву новини",reply_markup=markup_menu)
+            bot.register_next_step_handler(message, news_entry_2,text,photos)
+        elif message.content_type == 'text' and message.text == "Не надсилати":
+            if str(message.chat.id) == Admin:
+                bot.send_message(message.chat.id,"Надішліть назву новини",reply_markup=markup_menu_admin)
+            else:
+                bot.send_message(message.chat.id,"Надішліть назву новини",reply_markup=markup_menu)
+            bot.register_next_step_handler(message, news_entry_2,text,None)
+    def news_entry_2(message,text,photos):
+        bot.send_message(message.chat.id,"Надішліть своє ім\'я")
+        bot.register_next_step_handler(message, news_entry_3,text,photos,message.text)
+    def news_entry_3(message,text,photos,name_news):
+        bot.send_message(message.chat.id,"Надішліть теги для новини(через пробіл)")
+        bot.register_next_step_handler(message, news_entry_4,text,photos,name_news,message.text)
+    def news_entry_4(message,text,photos,name_news,name):
+
+        if str(message.chat.id) == Admin:
+            if photos != None:
+                file_id = photos[-1].file_id
+                # Отримуємо файл з Telegram
+                file_info = bot.get_file(file_id)
+                file_path = file_info.file_path
+                downloaded_file = bot.download_file(file_path)
+            else:
+                downloaded_file = None
+            id = add_news(name_news,name,text,downloaded_file,message.text)
+            bot.send_message(message.chat.id,"Новина надіслана")
+            for user in get_chat_ids():
+                keyboard = types.InlineKeyboardMarkup()
+                button_good = types.InlineKeyboardButton(text='✅', callback_data=f"news_like")
+                button_bad = types.InlineKeyboardButton(text='❌', callback_data=f"news_dislike")
+                keyboard.add(button_good,button_bad)
+                if downloaded_file != None:
+                    bot.send_photo(user,downloaded_file,caption=f"{name_news.upper()}\n__________________________________\n{text}\n__________________________________\nПрислав: {name}\n#{' #'.join(message.text.split())} #{id}",reply_markup = keyboard)
+                else:
+                    bot.send_message(user,f"{name_news.upper()}\n__________________________________\n{text}\n__________________________________\nПрислав: {name}\n#{' #'.join(message.text.split())} #{id}",reply_markup = keyboard)
+
+        else:
+            keyboard = types.InlineKeyboardMarkup()
+            button_good = types.InlineKeyboardButton(text='✅', callback_data=f"news_good")
+            button_bad = types.InlineKeyboardButton(text='❌', callback_data=f"news_bad")
+            keyboard.add(button_good,button_bad)
+            
+            if photos != None:
+                file_id = photos[-1].file_id
+                # Отримуємо файл з Telegram
+                file_info = bot.get_file(file_id)
+                file_path = file_info.file_path
+                downloaded_file = bot.download_file(file_path)
+                bot.send_photo(offer_chat,downloaded_file,caption=f"{name_news.upper()}\n__________________________________\n{text}\n__________________________________\nПрислав: {name}\n#{' #'.join(message.text.split())}",reply_markup = keyboard)
+            
+            else:
+                downloaded_file = None
+                bot.send_message(offer_chat,f"{name_news.upper()}\n__________________________________\n{text}\n__________________________________\nПрислав: {name}\n#{' #'.join(message.text.split())}",reply_markup = keyboard)
+            bot.send_message(message.chat.id,"Новина надіслана на обробку😉")
+        # bot.send_photo(message.chat.id,downloaded_file)
+        # add_news(name_news,name,text,downloaded_file,message.text)
+    @bot.callback_query_handler(func=lambda call: call.data == "news_bad")
+    def handle_teachers_callback(call):
+        bot.delete_message(call.message.chat.id,call.message.id)
+    @bot.callback_query_handler(func=lambda call: call.data == "news_good")
+    def handle_teachers_callback(call):
+        text = call.message.caption
+        if call.message.content_type == "photo":
+            text = call.message.caption
+            file_id = call.message.photo[-1].file_id
+            file_info = bot.get_file(file_id)
+            file_path = file_info.file_path
+            downloaded_file = bot.download_file(file_path)
+        else:
+            downloaded_file = None
+            text = call.message.text
+        # print(text.split()[0])
+        # print(text.split("\n")[4].split()[-1])
+        # print(text.split("\n")[2])
+        # print(" ".join(text.split("\n")[-1].replace(" ","").split("#")[1:]))
+        id = add_news(text.split()[0],text.split("\n")[4].split()[-1],text.split("\n")[2],downloaded_file," ".join(text.split("\n")[-1].replace(" ","").split("#")[1:]))
+        for user in get_chat_ids():
+            keyboard = types.InlineKeyboardMarkup()
+            button_good = types.InlineKeyboardButton(text='✅', callback_data=f"news_like")
+            button_bad = types.InlineKeyboardButton(text='❌', callback_data=f"news_dislike")
+            keyboard.add(button_good,button_bad)
+            if downloaded_file != None:
+                bot.send_photo(user,downloaded_file,caption=f"{text} #{id}",reply_markup = keyboard)
+            else:
+                bot.send_message(user,f"{text} #{id}",reply_markup = keyboard)
+
+
+    @bot.callback_query_handler(func=lambda call: call.data == "news_dislike")
+    def handle_teachers_callback(call):
+        bot.edit_message_reply_markup(call.message.chat.id,call.message.id,reply_markup = None)
+    @bot.callback_query_handler(func=lambda call: call.data == "news_like")
+    def handle_teachers_callback(call):
+        if call.message.content_type == "photo":
+            id = call.message.caption.split("#")[-1]
+        else:
+            id = call.message.text.split("#")[-1]
+        add_like(id)
+        bot.edit_message_reply_markup(call.message.chat.id,call.message.id,reply_markup = None)
+
+
+
+    @bot.callback_query_handler(func=lambda call: call.data == "news_revision")
+    def handle_teachers_callback(call):
+        date = get_all_dates()
+        print(date)
+        mounths = []
+        for i in date:
+            if i not in mounths:
+                mounths.append(i[1])
+        # mounths = list(set(mounths))
+        print(mounths, date)
+        text = mounths[-1]
+        print(text)
+        keyboard = types.InlineKeyboardMarkup(row_width=7)
+        i = 1
+        for _ in range(5):
+            buttons = []
+            for _ in range(7):
+                
+                for p in range(len(date)):
+                    if i == 7 :
+                        print(date[p][1],date[p][0],text)
+                    if date[p][1] == text and date[p][0] == i:
+                        print(i,len(buttons))
+                        if len(str(i)) == 1:
+                            ii = f"0{i}"
+                            buttons.append(types.InlineKeyboardButton(text=f'{i}', callback_data=f"day_{ii} {text}"))
+                        else:
+                            buttons.append(types.InlineKeyboardButton(text=f'{i}', callback_data=f"day_{i} {text}"))
+                        break
+                    elif p == len(date)-1:
+                        # print(date[p][1],date[p][0], i)
+                        buttons.append(types.InlineKeyboardButton(text='❌', callback_data=f"uakas_zalupa"))
+                i+=1
+            keyboard.add(buttons[0],buttons[1],buttons[2],buttons[3],buttons[4],buttons[5],buttons[6])
+        if len(mounths)>1:
+            button_left = types.InlineKeyboardButton(text=f'<—', callback_data=f"mounth_l_{text}")
+            keyboard.add(button_left)
+        bot.edit_message_text(text,call.message.chat.id,call.message.id)
+        bot.edit_message_reply_markup(call.message.chat.id,call.message.id,reply_markup = keyboard)
+
+    @bot.callback_query_handler(func=lambda call: "mounth" in call.data )
+    def handle_teachers_callback(call):
+        if call.data.split("_")[1] == "l":
+            mounth = call.data.split("_")[-1]
+            date = get_all_dates()
+            munului = None
+            mounths = []
+            for i in date:
+                if i[1] not in mounths:
+                    mounths.append(i[1])
+            print(mounth)
+            for i in range(len(mounths)):
+                if mounth == mounths[i]:
+                    if i!=0:
+                        munului = i-1
+                        break
+                    else:
+                        print(1001)
+                        return
+            keyboard = types.InlineKeyboardMarkup(row_width=7)
+            i = 1
+            for y in range(5):
+                buttons = []
+                for x in range(7):
+                    
+                    for p in range(len(date)):
+                        # print(date[p][1],mounths[munului],date[p][0],i)
+                        if i == 7 :
+                            print("1",date[p][1],date[p][0],mounths[munului],i,date[p][1] == mounths[munului],date[p][0] == i)
+                        if date[p][1] == mounths[munului] and date[p][0] == i:
+                            print("Добавляєм",len(buttons))
+                            if len(str(i)) == 1:
+                                ii = f"0{i}"
+                                buttons.append(types.InlineKeyboardButton(text=f'{i}', callback_data=f"day_{ii} {mounths[munului]}"))
+                            else:
+                                buttons.append(types.InlineKeyboardButton(text=f'{i}', callback_data=f"day_{i} {mounths[munului]}"))
+                            break
+                        elif p == len(date)-1:
+                            buttons.append(types.InlineKeyboardButton(text='❌', callback_data=f"uakas_zalupa"))
+                    i+=1
+                print(len(buttons))
+                keyboard.add(buttons[0],buttons[1],buttons[2],buttons[3],buttons[4],buttons[5],buttons[6])
+            button_left = types.InlineKeyboardButton(text=f'<—', callback_data=f"mounth_l_{mounths[munului]}")
+            button_right = types.InlineKeyboardButton(text=f'—>', callback_data=f"mounth_r_{mounths[munului]}")
+            if munului>0:
+                keyboard.add(button_left,button_right)
+            else:
+                keyboard.add(button_right)
+            print(date)
+            bot.edit_message_text(mounths[munului],call.message.chat.id,call.message.id)
+            bot.edit_message_reply_markup(call.message.chat.id,call.message.id,reply_markup = keyboard)
+            
+        else:
+            mounth = call.data.split("_")[-1]
+            date = get_all_dates()
+            munului = None
+            mounths = []
+            for i in date:
+                if i[1] not in mounths:
+                    mounths.append(i[1])
+            for i in range(len(mounths)):
+                if mounth == mounths[i]:
+                    if i!=len(date)-1:
+                        munului = i+1
+                        break
+                    else:
+                        print(1031)
+                        return
+            keyboard = types.InlineKeyboardMarkup(row_width=7)
+            i = 1
+            for y in range(5):
+                buttons = []
+                for x in range(7):
+                    
+                    for p in range(len(date)):
+                        
+                        if date[p][1] == mounths[munului] and date[p][0] == i:
+                            print("2",date[p][1],mounths[munului],date[p][0],i)
+                            if len(str(i)) == 1:
+                                ii = f"0{i}"
+                                buttons.append(types.InlineKeyboardButton(text=f'{i}', callback_data=f"day_{ii} {mounths[munului]}"))
+                            else:
+                                buttons.append(types.InlineKeyboardButton(text=f'{i}', callback_data=f"day_{i} {mounths[munului]}"))
+                            break
+                        elif p == len(date)-1:
+                            buttons.append(types.InlineKeyboardButton(text='❌', callback_data=f"uakas_zalupa"))
+                    i+=1
+                print(len(buttons))
+                keyboard.add(buttons[0],buttons[1],buttons[2],buttons[3],buttons[4],buttons[5],buttons[6])
+            button_right = types.InlineKeyboardButton(text=f'—>', callback_data=f"mounth_r_{mounths[munului]}")
+            button_left = types.InlineKeyboardButton(text=f'<—', callback_data=f"mounth_l_{mounths[munului]}")
+            if munului<len(mounths)-1:
+                keyboard.add(button_left,button_right)
+            else:
+                keyboard.add(button_left)
+            bot.edit_message_text(mounths[munului],call.message.chat.id,call.message.id)
+            bot.edit_message_reply_markup(call.message.chat.id,call.message.id,reply_markup = keyboard)
+
+    @bot.callback_query_handler(func=lambda call: call.data == "uakas_zalupa")
+    def handle_teachers_callback(call):
+        print("хуйня")
+    @bot.callback_query_handler(func=lambda call: "day" in call.data )
+    def handle_teachers_callback(call):
+        keyboard = types.InlineKeyboardMarkup()
+        for i in get_news_of_date(call.data.split("_")[1]):
+            keyboard.add(types.InlineKeyboardButton(text=f'{i[1]}', callback_data=f"new-{i[0]}"))
+        bot.send_message(call.message.chat.id,"Виберіть новину",reply_markup = keyboard)
+    @bot.callback_query_handler(func=lambda call: "new" in call.data )
+    def handle_teachers_callback(call):
+        new = get_new(call.data.split("-")[1])
+        keyboard = types.InlineKeyboardMarkup()
+        button_good = types.InlineKeyboardButton(text='✅', callback_data=f"news_like")
+        button_bad = types.InlineKeyboardButton(text='❌', callback_data=f"news_dislike")
+        keyboard.add(button_good,button_bad)
+        if new[5]:
+            bot.send_photo(call.message.chat.id,new[5],caption=f"{new[2].upper()}\n__________________________________\n{new[4]}\n__________________________________\nПрислав: {new[3]}\n#{' #'.join((new[6]).split())}\n#{new[0]}",reply_markup = keyboard)
+        else:
+            bot.send_message(call.message.chat.id,f"{new[2].upper()}\n__________________________________\n{new[4]}\n__________________________________\nПрислав: {new[3]}\n#{' #'.join(new[6])}\n#{(new[0]).split()}",reply_markup = keyboard)
 
     # -----------------------------GPT--------------------------------------------------
     # @bot.message_handler(func=lambda message: message.text =='GPT' )
