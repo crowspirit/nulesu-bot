@@ -326,9 +326,10 @@ try:
         if call.data.split("_")[1] == "all":
             mess = bot.send_message(call.message.chat.id, "Надішліть повідомлення:")
             bot.register_next_step_handler(mess, news,call)
-        else:
-            mess = bot.send_message(call.message.chat.id, "Надішліть id:")
-            bot.register_next_step_handler(mess, id_news,call)
+    @bot.callback_query_handler(func=lambda call:   call.data == "news_user")
+    def handle_teachers_callback(call):
+        mess = bot.send_message(call.message.chat.id, "Надішліть id:")
+        bot.register_next_step_handler(mess, id_news,call)
 
     def id_news(message,call):
         mess = bot.send_message(call.message.chat.id, "Надішліть повідомлення:")
@@ -355,19 +356,19 @@ try:
             for user in Users:
                 try:
                     if message.content_type == "sticker":
-                        bot.send_sticker(user,message.sticker.file_id)
+                        bot.send_sticker(user,message.sticker.file_id, reply_markup=markup_menu)
                     elif message.content_type == "photo":
                         bot.send_photo(user,message.photo[-1].file_id)
                         if message.caption:
-                            bot.send_message(user,message.caption)
+                            bot.send_message(user,message.caption, reply_markup=markup_menu)
                     elif message.content_type == "text":
                         if str(user[:-1]) == Admin:
                             bot.send_message(user,message.text, reply_markup=markup_menu_admin)
                         else:
                             markup = types.ReplyKeyboardRemove(selective=False)
-                            bot.send_message(user,message.text, reply_markup=markup)
+                            bot.send_message(user,message.text, reply_markup=markup_menu)
                     elif message.content_type == "document":
-                        bot.send_document(user, message.document.file_id)
+                        bot.send_document(user, message.document.file_id, reply_markup=markup_menu)
                 except Exception as e:
                     print(f"{user}  ban - {e}")
             bot.send_message(Admin,"good")
