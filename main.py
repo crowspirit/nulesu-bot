@@ -960,7 +960,7 @@ try:
         # print(text.split("\n")[4].split()[-1])
         # print(text.split("\n")[2])
         # print(" ".join(text.split("\n")[-1].replace(" ","").split("#")[1:]))
-        id = add_news(text.split()[0],text.split("\n")[4].split()[-1],text.split("\n")[2],downloaded_file," ".join(text.split("\n")[-1].replace(" ","").split("#")[1:]))
+        id = add_news(text.split("\n")[0],text.split("\n")[4].split(":")[-1],text.split("\n")[2],downloaded_file," ".join(text.split("\n")[-1].replace(" ","").split("#")[1:]))
         for user in get_chat_ids():
             keyboard = types.InlineKeyboardMarkup()
             button_good = types.InlineKeyboardButton(text='✅', callback_data=f"news_like")
@@ -1177,7 +1177,7 @@ try:
         bot.send_message(chat_id=message.chat.id,text="скасовано",reply_markup=markup)
     bot.polling(none_stop=True)
 except Exception as e:
-    bot.send_message(Admin,f"краш{e}")
+    bot.send_message(Admin,f"краш  {e}")
     with open("database.db","rb") as file:
         bot.send_document(Admin,file)
     with open("user_db.db","rb") as file:
