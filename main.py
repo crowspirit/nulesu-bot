@@ -10,6 +10,8 @@ import sqlite3
 from time import sleep
 import io
 
+
+
 def get_group_id(user):
     try:
         conn = sqlite3.connect('database.db')
@@ -132,12 +134,38 @@ group_by_department = {
 
 
 bot = telebot.TeleBot(config.TOKEN,skip_pending = True)
-bot.send_message(config.Admin, 'БОТ ЗАПУЩЕН')
+keyboard = types.InlineKeyboardMarkup()
+keyboard.add(types.InlineKeyboardButton(text="start", callback_data=f"start"))
+bot.send_message(config.Admin, 'БОТ ЗАПУЩЕН', reply_markup=keyboard)
 
 
 
 try:
+    @bot.callback_query_handler(func=lambda call: call.data == "start")
+    def handle_teachers_callback(call):
+        while True:
+            try:
+                if print_data()[:2] ==  "18":
+                    if parse_z():
+                        users = get_chat_ids()
 
+                        lens = len(users)
+                        mess = bot.send_message(Admin,"start")
+                        for user in users:
+                            teacher = get_teacher(user)
+                            group = get_group_id(user)
+                            print(lens)
+                            bot.edit_message_text(text = str(lens),chat_id = Admin,message_id= mess.message_id)
+                            with open('zaminu/'+print_data()+'.png',"rb")as photo:
+                                print(user," ")
+                                try:
+                                    bot.send_photo(user,photo=photo)
+                                except:
+                                    print(user,"помилка")
+            except Exception as e:
+                bot.send_message(Admin,f"Помилка розсилки замін\n{e}")
+            sleep(3600)
+            
 # -----------------------------------Реєстрація-------------------------------
 
     @bot.message_handler(func=lambda message: message.text =="Реєстрація" or message.text =="/start")
