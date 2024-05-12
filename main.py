@@ -135,7 +135,7 @@ group_by_department = {
 
 bot = telebot.TeleBot(config.TOKEN,skip_pending = True)
 keyboard = types.InlineKeyboardMarkup()
-keyboard.add(types.InlineKeyboardButton(text="start", callback_data=f"start"))
+keyboard.add(types.InlineKeyboardButton(text="start", callback_data="start"))
 bot.send_message(config.Admin, 'БОТ ЗАПУЩЕН', reply_markup=keyboard)
 
 
