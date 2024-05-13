@@ -144,7 +144,7 @@ try:
     @bot.callback_query_handler(func=lambda call: call.data == "start")
     def handle_teachers_callback(call):
         while True:
-            print(print_data()[:2])
+            print(print_time()[:2])
             try:
                 if print_data()[:2] ==  "19":
                     if parse_z():
