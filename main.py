@@ -147,7 +147,7 @@ try:
             bot.send_message(Admin,print_time()[:2])
             print(print_time()[:2])
             try:
-                if str(print_data()[:2]) ==  "19":
+                if str(print_time()[:2]) ==  "20":
                     if parse_z():
                         users = get_chat_ids()
 
