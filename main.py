@@ -165,7 +165,7 @@ try:
                                 except:
                                     print(user,"помилка")
                             lens -= 1
-                bot.edit_message_text("good",Admin,mess.message_id)
+                    bot.edit_message_text("good",Admin,mess.message_id)
             except Exception as e:
                 bot.send_message(Admin,f"Помилка розсилки замін\n{e}")
             sleep(3600)
