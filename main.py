@@ -147,7 +147,7 @@ try:
             bot.send_message(Admin,print_time()[:2])
             print(print_time()[:2])
             try:
-                if str(print_time()[:2]) ==  "20":
+                if str(print_time()[:2]) ==  "21":
                     if parse_z():
                         users = get_chat_ids()
 
@@ -164,6 +164,8 @@ try:
                                     bot.send_photo(user,photo=photo)
                                 except:
                                     print(user,"помилка")
+                            lens -= 1
+                bot.edit_message_text("good",Admin,mess.message_id)
             except Exception as e:
                 bot.send_message(Admin,f"Помилка розсилки замін\n{e}")
             sleep(3600)
