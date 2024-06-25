@@ -1207,7 +1207,7 @@ try:
         else:
             markup = markup_menu
         bot.send_message(chat_id=message.chat.id,text="скасовано",reply_markup=markup)
-    bot.polling(none_stop=True)
+    bot.polling(none_stop=True,timeout=3600,interval=1)
 except Exception as e:
     bot.send_message(Admin,f"краш  {e}")
     with open("database.db","rb") as file:
